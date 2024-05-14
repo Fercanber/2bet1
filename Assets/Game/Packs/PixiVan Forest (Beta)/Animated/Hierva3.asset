@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
-  m_Name: agua
+  m_Name: Hierva3
   m_EditorClassIdentifier: 
-  m_AnimatedSprites: []
-  m_MinSpeed: 1
-  m_MaxSpeed: 1
+  m_AnimatedSprites:
+  - {fileID: -1950232381, guid: 4075a4dc2f9088047a059dbe50cb6772, type: 3}
+  - {fileID: -780648864, guid: 4075a4dc2f9088047a059dbe50cb6772, type: 3}
+  - {fileID: -204623347, guid: 4075a4dc2f9088047a059dbe50cb6772, type: 3}
+  - {fileID: -1629197316, guid: 4075a4dc2f9088047a059dbe50cb6772, type: 3}
+  m_MinSpeed: 2
+  m_MaxSpeed: 2
   m_AnimationStartTime: 0
   m_AnimationStartFrame: 0
   m_TileColliderType: 0
