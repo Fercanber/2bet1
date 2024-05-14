@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6c84243d0269085469802f44806b9ecd
+guid: 08336ab600739db48b52a36b0d00ae22
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,12 +110,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Back Movement_0
+      name: Side Movement_0
       rect:
         serializedVersion: 2
-        x: 26
+        x: 25
         y: 86
-        width: 12
+        width: 10
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,19 +124,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe017a96941dca94dbdcc9d1b9c6a00b
-      internalID: -1016912952
+      spriteID: 953e7cfc4d22a91479c2e7deeea5eec2
+      internalID: -1976124436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_1
+      name: Side Movement_1
       rect:
         serializedVersion: 2
-        x: 90
+        x: 89
         y: 86
-        width: 12
+        width: 10
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -145,19 +145,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c4f1edff4f80ca40b68dd20d28adf34
-      internalID: -1230622091
+      spriteID: 21f4e9d18bb50584ba79d7b2d596d4ce
+      internalID: 391158352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_2
+      name: Side Movement_2
       rect:
         serializedVersion: 2
-        x: 154
+        x: 153
         y: 86
-        width: 12
+        width: 10
         height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,19 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 925b738ce55409f4a8cdae29a1c6f58a
-      internalID: 351853083
+      spriteID: 84fcacccb701a094a99f6124cecaa258
+      internalID: -1921202011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_3
+      name: Side Movement_3
       rect:
         serializedVersion: 2
-        x: 218
+        x: 217
         y: 86
-        width: 12
+        width: 11
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -187,19 +187,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2eaf12585ee769e43a1a2f98671bc0fe
-      internalID: -270294522
+      spriteID: 41a8bb1494198b14e9197e99ef1c20d7
+      internalID: 869612789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_4
+      name: Side Movement_4
       rect:
         serializedVersion: 2
-        x: 281
+        x: 280
         y: 86
-        width: 14
+        width: 13
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -208,19 +208,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c0fdb3b37829cd4581b80c8561646a6
-      internalID: 1911499682
+      spriteID: 12c80eaab1ed00b47a0179463606be08
+      internalID: 1520805542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_5
+      name: Side Movement_5
       rect:
         serializedVersion: 2
-        x: 346
+        x: 344
         y: 86
-        width: 12
+        width: 13
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -229,40 +229,103 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9f5d1b7c3ce3c046b2819e66720ca8d
-      internalID: -2031373429
+      spriteID: 9561d0b9ddf7d6e4c90b6d5d3b05a532
+      internalID: 1235927207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_6
+      name: Side Movement_6
       rect:
         serializedVersion: 2
-        x: 25
+        x: 24
+        y: 22
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc7cb83cddc30a468573d2757857d63
+      internalID: 1155944554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Movement_7
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 22
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80af612baa5e7374ab5cc32273fe0aef
+      internalID: 269231575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Movement_8
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 22
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0f4b5a315a0fa4fbbb8fbb93967551
+      internalID: 376746962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Movement_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 22
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed61e8810f92364fae0271af0a927d5
+      internalID: 1699069267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Movement_10
+      rect:
+        serializedVersion: 2
+        x: 280
         y: 23
-        width: 14
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e25bacb9657f3a045a6d93e86feb182e
-      internalID: -1624723945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Back Movement_7
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 24
-        width: 14
+        width: 11
         height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -271,20 +334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d415f3cf82973a54ba08e252a868fe0c
-      internalID: -1410948700
+      spriteID: ce2d2e1ac3e7a88408572d0bc16a0d65
+      internalID: -56142756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_8
+      name: Side Movement_11
       rect:
         serializedVersion: 2
-        x: 153
+        x: 344
         y: 23
-        width: 14
-        height: 23
+        width: 11
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,71 +355,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f95cb57b9b8f7ba4bbd7c9966680f59d
-      internalID: 332634659
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Back Movement_9
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 23
-        width: 14
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03d26792dae340a4296bb638f8e51112
-      internalID: -669841120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Back Movement_10
-      rect:
-        serializedVersion: 2
-        x: 281
-        y: 24
-        width: 14
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7cde60db3d347254598164f58500e5c4
-      internalID: -139278399
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Back Movement_11
-      rect:
-        serializedVersion: 2
-        x: 346
-        y: 23
-        width: 12
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1989f0220f61f2d4aa94db568359232a
-      internalID: -1232488769
+      spriteID: 1b513963b5f03404c99fef4d6de72063
+      internalID: 1333824796
       vertices: []
       indices: 
       edges: []
@@ -372,18 +372,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Back Movement_0: -1016912952
-      Back Movement_1: -1230622091
-      Back Movement_10: -139278399
-      Back Movement_11: -1232488769
-      Back Movement_2: 351853083
-      Back Movement_3: -270294522
-      Back Movement_4: 1911499682
-      Back Movement_5: -2031373429
-      Back Movement_6: -1624723945
-      Back Movement_7: -1410948700
-      Back Movement_8: 332634659
-      Back Movement_9: -669841120
+      Side Movement_0: -1976124436
+      Side Movement_1: 391158352
+      Side Movement_10: -56142756
+      Side Movement_11: 1333824796
+      Side Movement_2: -1921202011
+      Side Movement_3: 869612789
+      Side Movement_4: 1520805542
+      Side Movement_5: 1235927207
+      Side Movement_6: 1155944554
+      Side Movement_7: 269231575
+      Side Movement_8: 376746962
+      Side Movement_9: 1699069267
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

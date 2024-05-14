@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6c84243d0269085469802f44806b9ecd
+guid: 714df4ee3d1d805468291d6f773c2054
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,29 +93,16 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Back Movement_0
+      name: Side Movement - Fllipped_0
       rect:
         serializedVersion: 2
-        x: 26
+        x: 27
         y: 86
-        width: 12
+        width: 13
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,82 +111,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe017a96941dca94dbdcc9d1b9c6a00b
-      internalID: -1016912952
+      spriteID: f5d45e68fea6e8448b7449085977731a
+      internalID: 1240492337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_1
+      name: Side Movement - Fllipped_1
       rect:
         serializedVersion: 2
-        x: 90
+        x: 91
         y: 86
-        width: 12
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c4f1edff4f80ca40b68dd20d28adf34
-      internalID: -1230622091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Back Movement_2
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 86
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 925b738ce55409f4a8cdae29a1c6f58a
-      internalID: 351853083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Back Movement_3
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 86
-        width: 12
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2eaf12585ee769e43a1a2f98671bc0fe
-      internalID: -270294522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Back Movement_4
-      rect:
-        serializedVersion: 2
-        x: 281
-        y: 86
-        width: 14
+        width: 13
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -208,19 +132,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c0fdb3b37829cd4581b80c8561646a6
-      internalID: 1911499682
+      spriteID: bd9d9f73f20f6fb4aa3de81d0cf7b7d0
+      internalID: 641934674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_5
+      name: Side Movement - Fllipped_2
       rect:
         serializedVersion: 2
-        x: 346
+        x: 156
         y: 86
-        width: 12
+        width: 11
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -229,20 +153,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9f5d1b7c3ce3c046b2819e66720ca8d
-      internalID: -2031373429
+      spriteID: 967dbf461bd06064c990931ffb98662c
+      internalID: -1488472745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_6
+      name: Side Movement - Fllipped_3
       rect:
         serializedVersion: 2
-        x: 25
+        x: 221
+        y: 86
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4d1834c7a51874d8a40d8b416a24dd
+      internalID: 323882904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Movement - Fllipped_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 86
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76bbf6caaf3dde4c8188d80dae37f44
+      internalID: 826217522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Movement - Fllipped_5
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 86
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f110fac2b844a07419c7a27ce74439f1
+      internalID: 221118443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side Movement - Fllipped_6
+      rect:
+        serializedVersion: 2
+        x: 29
         y: 23
-        width: 14
-        height: 23
+        width: 11
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,19 +237,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e25bacb9657f3a045a6d93e86feb182e
-      internalID: -1624723945
+      spriteID: 51689665cee289a46a2bf5560513b6ac
+      internalID: 22014627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_7
+      name: Side Movement - Fllipped_7
       rect:
         serializedVersion: 2
-        x: 89
-        y: 24
-        width: 14
+        x: 93
+        y: 23
+        width: 11
         height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -271,19 +258,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d415f3cf82973a54ba08e252a868fe0c
-      internalID: -1410948700
+      spriteID: 9015d2f1d8d91d24e92d8318e729d8dc
+      internalID: 96381104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_8
+      name: Side Movement - Fllipped_8
       rect:
         serializedVersion: 2
-        x: 153
-        y: 23
-        width: 14
+        x: 157
+        y: 22
+        width: 11
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -292,19 +279,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f95cb57b9b8f7ba4bbd7c9966680f59d
-      internalID: 332634659
+      spriteID: 35ba6c1d4f91ecf41bf3776d43e9993b
+      internalID: 1177471338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_9
+      name: Side Movement - Fllipped_9
       rect:
         serializedVersion: 2
-        x: 217
-        y: 23
-        width: 14
+        x: 221
+        y: 22
+        width: 11
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -313,20 +300,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03d26792dae340a4296bb638f8e51112
-      internalID: -669841120
+      spriteID: 13a883b626396f343a34d1fa7fa00101
+      internalID: 1311848327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_10
+      name: Side Movement - Fllipped_10
       rect:
         serializedVersion: 2
-        x: 281
-        y: 24
-        width: 14
-        height: 21
+        x: 285
+        y: 22
+        width: 11
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,19 +321,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cde60db3d347254598164f58500e5c4
-      internalID: -139278399
+      spriteID: 38ab1a80a5f278c4e91c80dd1eac177f
+      internalID: 735582970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Back Movement_11
+      name: Side Movement - Fllipped_11
       rect:
         serializedVersion: 2
-        x: 346
-        y: 23
-        width: 12
+        x: 349
+        y: 22
+        width: 11
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -355,8 +342,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1989f0220f61f2d4aa94db568359232a
-      internalID: -1232488769
+      spriteID: 6011250bf3e527c4aa3f483d44760759
+      internalID: 484551023
       vertices: []
       indices: 
       edges: []
@@ -372,18 +359,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Back Movement_0: -1016912952
-      Back Movement_1: -1230622091
-      Back Movement_10: -139278399
-      Back Movement_11: -1232488769
-      Back Movement_2: 351853083
-      Back Movement_3: -270294522
-      Back Movement_4: 1911499682
-      Back Movement_5: -2031373429
-      Back Movement_6: -1624723945
-      Back Movement_7: -1410948700
-      Back Movement_8: 332634659
-      Back Movement_9: -669841120
+      Side Movement - Fllipped_0: 1240492337
+      Side Movement - Fllipped_1: 641934674
+      Side Movement - Fllipped_10: 735582970
+      Side Movement - Fllipped_11: 484551023
+      Side Movement - Fllipped_2: -1488472745
+      Side Movement - Fllipped_3: 323882904
+      Side Movement - Fllipped_4: 826217522
+      Side Movement - Fllipped_5: 221118443
+      Side Movement - Fllipped_6: 22014627
+      Side Movement - Fllipped_7: 96381104
+      Side Movement - Fllipped_8: 1177471338
+      Side Movement - Fllipped_9: 1311848327
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
