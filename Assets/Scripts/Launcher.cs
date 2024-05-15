@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using Cinemachine;
 
 public class Launcher : MonoBehaviourPunCallbacks
 {
@@ -14,7 +15,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         PhotonNetwork.ConnectUsingSettings();
     }
 
-    
+
     public override void OnConnectedToMaster()
     {
         Debug.Log("Nos hemos conectado al master");
