@@ -1,10 +1,11 @@
+using Photon.Pun;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviourPunCallbacks
 {
 
     public float speed;
@@ -22,16 +23,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement.x = Input.GetAxis("Horizontal");
-        movement.y = Input.GetAxis("Vertical");
+        if (photonView.IsMine)
+        {
+           movement.x = Input.GetAxis("Horizontal");
+           movement.y = Input.GetAxis("Vertical");
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
-    }
+           animator.SetFloat("Horizontal", movement.x);
+           animator.SetFloat("Vertical", movement.y);
+           animator.SetFloat("Speed", movement.sqrMagnitude);
 
-    private void FixedUpdate()
-    {
-       rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+           rb.MovePosition(rb.position + movement * speed * Time.deltaTime);
+        }
     }
 }
