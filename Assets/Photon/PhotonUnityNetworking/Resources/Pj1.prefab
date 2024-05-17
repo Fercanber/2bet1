@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 376231996784275090}
   - component: {fileID: 6423832374079918681}
   - component: {fileID: 2441131057754954643}
+  - component: {fileID: -4949415607901839424}
   m_Layer: 0
   m_Name: Pj1
   m_TagString: Untagged
@@ -458,3 +459,15 @@ MonoBehaviour:
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
+--- !u!114 &-4949415607901839424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9180177596316954105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dadaf54c9bed7e43adede2d7fa22a0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
