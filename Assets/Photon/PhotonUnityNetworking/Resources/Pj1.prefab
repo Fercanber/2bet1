@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 3539840610937046505}
   m_Layer: 0
   m_Name: Pj1
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18632328cb54b4e4683ac5ea12ccd03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 2
 --- !u!61 &2548126005994982705
 BoxCollider2D:
   m_ObjectHideFlags: 0
