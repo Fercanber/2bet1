@@ -19,6 +19,7 @@ public class Triguer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider){
         Debug.Log("Triguer!!!!");
+        Destroy(collider.gameObject);
     }
 
     private void DestroyOnColision2D(Collider2D collider){
