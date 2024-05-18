@@ -4,9 +4,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using static ItemController;
 
 public class PlayerController : MonoBehaviourPunCallbacks
 {
+    public delegate void ENotificarColision(string tag);
+    public event ENotificarColision eNotificarColision ;
 
     public float speed;
 
@@ -17,7 +20,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     void Start()
     {
        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+       animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -35,4 +38,14 @@ public class PlayerController : MonoBehaviourPunCallbacks
            rb.MovePosition(rb.position + movement * speed * Time.deltaTime);
         }
     }
+
+    private void OnTriggerStay2D(Collider2D collider)
+    {
+        if(collider.gameObject.tag == "Vela")
+        {
+            Debug.Log("El jugador esta colisionando con: " + collider.gameObject.tag);
+            eNotificarColision(collider.gameObject.tag);
+        }
+    }
+
 }

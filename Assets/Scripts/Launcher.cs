@@ -8,7 +8,7 @@ using Org.BouncyCastle.Crypto.Macs;
 
 public class Launcher : MonoBehaviourPunCallbacks
 {
-    private bool gameStarted = false;
+    private bool gameStarted = true;
     private int numJugadoresConectados = 0;
 
     public PhotonView _pj1Prefab, _pj2Prefab;
@@ -20,7 +20,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     
     void Start()
     {
-        GameController.SetActive(false);
+        //GameController.SetActive(false);
         PhotonNetwork.ConnectUsingSettings();
         GameObject borders = GameObject.Find("Borders");
         PolygonCollider2D polygonCollider = borders.GetComponent<PolygonCollider2D>();

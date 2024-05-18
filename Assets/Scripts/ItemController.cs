@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemController : MonoBehaviour
-{
-    public delegate void Pulsado();
-    public event Pulsado BotonPulsado;
-
-    public string myTag;
-
-    private void OnTriggerStay2D(Collider2D collider)
+{   
+    private void Start()
     {
-        myTag = collider.gameObject.tag;
-        Debug.Log(myTag + "TRIGUER stay");
+        
     }
-    private void OnTriggerExit2D(Collider2D collider)
+
+    // Los unicos elementos que pueden colisionar con algun gameObject del mapa son los player.
+    /*private void OnTriggerStay2D(Collider2D collider)
     {
-        myTag = null;
-        Debug.Log(myTag + "HA SALIDO DEL TRIGUER");
-    }
+        if(collider.gameObject.tag == "Player1" || collider.gameObject.tag == "Player2")
+        {
+            ecollision();
+        }
+    }*/
+
 }

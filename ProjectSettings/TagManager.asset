@@ -6,6 +6,21 @@ TagManager:
   tags:
   - Player1
   - Player2
+  - CameraPj1
+  - CameraPj2
+  - Borders
+  - Vela
+  - Pocion
+  - Pala
+  - Compas
+  - Vino
+  - Pluma
+  - Cruz
+  - Pergamino
+  - Puente
+  - spwanPointPj1
+  - spawnPointPj2
+  - Launcher
   layers:
   - Default
   - TransparentFX
