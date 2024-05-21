@@ -36,8 +36,8 @@ public class GameController : MonoBehaviour
             {
                 Debug.Log("Destruyendo items");
                 GameObject[] objs = GameObject.FindGameObjectsWithTag(tagCollision1);
-                for(int i =0; i < objs.Length; i++) { 
-                    Destroy(objs[i]); 
+                for(int i =0; i < objs.Length; i++) {
+                    PhotonNetwork.Destroy(objs[i]);
                 }
             }
         }
