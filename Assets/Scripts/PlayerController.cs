@@ -39,12 +39,38 @@ public class PlayerController : MonoBehaviourPunCallbacks
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collider)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.gameObject.tag == "Vela")
+        if(collider.gameObject.tag == "Vela" 
+            || collider.gameObject.tag == "Pocion"
+             || collider.gameObject.tag == "Pala"
+              || collider.gameObject.tag == "Compas"
+               || collider.gameObject.tag == "Vino"
+                || collider.gameObject.tag == "Pluma"
+                  || collider.gameObject.tag == "Cruz"
+                    || collider.gameObject.tag == "PocionV"
+                     || collider.gameObject.tag == "Pergamino"
+                      || collider.gameObject.tag == "Puente")
         {
-            Debug.Log("El jugador esta colisionando con: " + collider.gameObject.tag);
+            Debug.Log("Player controller esta colisionando con: " + collider.gameObject.tag);
             eNotificarColision(collider.gameObject.tag);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Vela"
+           || collider.gameObject.tag == "Pocion"
+            || collider.gameObject.tag == "Pala"
+             || collider.gameObject.tag == "Compas"
+              || collider.gameObject.tag == "Vino"
+               || collider.gameObject.tag == "Pluma"
+                 || collider.gameObject.tag == "Cruz"
+                   || collider.gameObject.tag == "PocionV"
+                    || collider.gameObject.tag == "Pergamino"
+                     || collider.gameObject.tag == "Puente")
+        {
+            eNotificarColision(null);
         }
     }
 

@@ -21,6 +21,7 @@ TagManager:
   - spwanPointPj1
   - spawnPointPj2
   - Launcher
+  - PocionV
   layers:
   - Default
   - TransparentFX

@@ -9,9 +9,9 @@ public class SelectCharacterController : MonoBehaviour
 
     private void Awake()
     {
-        if(SelectCharacterController.instance == null)
+        if(instance == null)
         {
-            SelectCharacterController.instance = this;
+            instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
         else
