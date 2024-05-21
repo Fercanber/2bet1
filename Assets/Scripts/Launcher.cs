@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Cinemachine;
-using UnityEngine.UI;
-using Org.BouncyCastle.Crypto.Macs;
-using Mirror;
+using System.Collections.Generic;
+using UnityEngine.UIElements;
 
 public class Launcher : MonoBehaviourPunCallbacks
 {
@@ -16,9 +13,11 @@ public class Launcher : MonoBehaviourPunCallbacks
     public GameObject GameController;
     public GameObject items;
 
+    public PhotonView[] _items;
+    public Transform[] _itemsSpawnPoints;
+
     void Start()
     {
-        items.SetActive(false);
         GameController.SetActive(false);
         PhotonNetwork.ConnectUsingSettings();
         GameObject borders = GameObject.Find("Borders");
@@ -27,7 +26,6 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public void Update()
     {
-        Debug.Log(PhotonNetwork.CountOfPlayers);
     }
 
     public override void OnConnectedToMaster()
@@ -62,7 +60,11 @@ public class Launcher : MonoBehaviourPunCallbacks
         if (GameController != null && PhotonNetwork.CountOfPlayers == 2)
         {
             GameController.SetActive(true);
-            items.SetActive(true);
+
+            for (int i = 0; i < _items.Length; i++)
+            {
+                PhotonNetwork.Instantiate(_items[i].name, _itemsSpawnPoints[i].position, _itemsSpawnPoints[i].rotation);
+            }
         }
     }
 }
