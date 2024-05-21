@@ -40,34 +40,29 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         GameObject player;
-        if (true)
+        if (SelectCharacterController.instance.isPj1Selected())
         {
-            if (SelectCharacterController.instance.isPj1Selected())
-            {
-                player = PhotonNetwork.Instantiate(_pj1Prefab.name, _spawnPointPj1.position, _spawnPointPj1.rotation);
-                _cameraPj1.enabled = true;
-                _cameraPj2.enabled = false;
+            player = PhotonNetwork.Instantiate(_pj1Prefab.name, _spawnPointPj1.position, _spawnPointPj1.rotation);
+            _cameraPj1.enabled = true;
+            _cameraPj2.enabled = false;
 
-                Debug.Log("Instanciando Player 1");
-            }
-            else
-            {
-                player = PhotonNetwork.Instantiate(_pj2Prefab.name, _spawnPointPj2.position, _spawnPointPj2.rotation);
-                _cameraPj1.enabled = false;
-                _cameraPj2.enabled = true;
-
-                Debug.Log("Instanciando Player 2");
-
-            }
-            player.GetComponentInChildren<CinemachineVirtualCamera>().GetComponent<CinemachineConfiner2D>().m_BoundingShape2D = GameObject.Find("Borders").GetComponent<PolygonCollider2D>();
-
-        }else
+            Debug.Log("Instanciando Player 1");
+        }
+        else
         {
-            if (GameController != null)
-            {
-                GameController.SetActive(true);
-                items.SetActive(true);
-            }
+            player = PhotonNetwork.Instantiate(_pj2Prefab.name, _spawnPointPj2.position, _spawnPointPj2.rotation);
+            _cameraPj1.enabled = false;
+            _cameraPj2.enabled = true;
+
+            Debug.Log("Instanciando Player 2");
+
+        }
+        player.GetComponentInChildren<CinemachineVirtualCamera>().GetComponent<CinemachineConfiner2D>().m_BoundingShape2D = GameObject.Find("Borders").GetComponent<PolygonCollider2D>();
+
+        if (GameController != null && PhotonNetwork.CountOfPlayers == 2)
+        {
+            GameController.SetActive(true);
+            items.SetActive(true);
         }
     }
 }
