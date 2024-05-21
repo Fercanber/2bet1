@@ -15,7 +15,7 @@ public class UI_Assistant : MonoBehaviour
 
     public void Awake()
     {
-       audioSource = transform.Find("Wizzard").Find("Body").GetComponent<AudioSource>();   
+       audioSource = transform.Find("Body").GetComponent<AudioSource>();   
        messageText = transform.Find("message").Find("messageText").GetComponent<Text>();
         transform.Find("message").Find("nextText").GetComponent<Button>().onClick.AddListener(() =>
         {
@@ -27,13 +27,11 @@ public class UI_Assistant : MonoBehaviour
             {
                 string[] messageArray = new string[]
                 {
-                 "En el recóndito Hizdharr Village, se alza una mazmorra de la cual ningún mago ha logrado salir victorioso.",
-                 "Oculta en sus entrañas se encuentra La Vara de Hizdharr, un objeto de poder inimaginable que concede a su poseedor sabiduría y magia superiores a las de cualquier hechicero.",
-                 "Dos magos de renombre, Prometheuss y Roosswall, llegaron al pueblo con la firme intención de conquistar la mazmorra y reclamar la vara.",
-                 "Al adentrarse en sus sombrías galerías, los senderos se bifurcan, llevando a Prometheuss y Roosswall por rutas divergentes.\r\n",
-                 "Deberás comunicarte con tu compañero para resolver los diferentes problemas, enigmas y acertijos que se interpondrán en vuestro camino.",
-                 "Estos enigmas y acertijos, se encontrarán escondidos en cada nivel, por tanto deberás primero encontrarlos para poder resolverlos.",
-                 "!Buena Suerte!"
+                 "Ey despertad!",
+                 "Rommy, Fiira!",
+                 "Hemos tenido un pequeño accidente con el barco volador estais bien?\r\n",
+                 "Estamos bastante cerca de puerto marfil, uhmmmm que tal si usais vuestra magia para recoger el equipaje y comemos rico en la posada antes de seguir nuestro camino.\r\n",
+                 "Recordad que vuestra magia funciona mejor si lo haceis a la vez"
                 };
    
                 string message = messageArray[characterIndex];
@@ -47,7 +45,7 @@ public class UI_Assistant : MonoBehaviour
     }
     private void Start()
     {
-        TextWriter.AddWriter_Static(messageText, "En el recóndito Hizdharr Village, se alza una mazmorra de la cual ningún mago ha logrado salir victorioso.", .05f, true, true);
+        TextWriter.AddWriter_Static(messageText, "Ey despertad!", .05f, true, true);
         PlayAudioText.PlayTextAudio_Static(audioSource, audioClips[0]);
     }
 }
