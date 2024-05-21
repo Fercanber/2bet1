@@ -14,7 +14,6 @@ public class Launcher : MonoBehaviourPunCallbacks
     public GameObject items;
 
     public PhotonView[] _items;
-    public Transform[] _itemsSpawnPoints;
 
     void Start()
     {
@@ -63,7 +62,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 
             for (int i = 0; i < _items.Length; i++)
             {
-                PhotonNetwork.Instantiate(_items[i].name, _itemsSpawnPoints[i].position, _itemsSpawnPoints[i].rotation);
+                PhotonNetwork.Instantiate(_items[i].name, _items[i].GetComponent<Transform>().position, _items[i].GetComponent<Transform>().rotation);
             }
         }
     }
