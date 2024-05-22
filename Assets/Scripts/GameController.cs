@@ -9,10 +9,13 @@ public class GameController : MonoBehaviour
 {
     private GameObject player1, player2;
     private string tagCollision1 = null, tagCollision2 = null;
-
-
+    public int numObjetosDestruidos = 0;
+    public GameObject _portal;
+    public GameObject _portalCollider;
     void Start()
     {
+        _portal.SetActive(false);
+        _portalCollider.SetActive(false);
         player1 = GameObject.FindGameObjectWithTag("Player1");
         if (player1 != null)
         {
@@ -38,8 +41,17 @@ public class GameController : MonoBehaviour
                 GameObject[] objs = GameObject.FindGameObjectsWithTag(tagCollision1);
                 for(int i =0; i < objs.Length; i++) {
                     PhotonNetwork.Destroy(objs[i]);
+                    numObjetosDestruidos++;
                 }
+
             }
+        }
+
+       if(numObjetosDestruidos == 18)
+        {
+            _portal.SetActive(true);
+            _portalCollider.SetActive(true);
+            numObjetosDestruidos = 21;
         }
     }
 

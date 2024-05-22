@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 
 public class Launcher : MonoBehaviourPunCallbacks
 {
+    private int numObjetosDestruidos = 0;
     public PhotonView _pj1Prefab, _pj2Prefab;
     public Transform _spawnPointPj1, _spawnPointPj2;
     public Camera _cameraPj1, _cameraPj2;
@@ -14,6 +15,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public GameObject items;
 
     public PhotonView[] _items;
+    public PhotonView _portal;
 
     void Start()
     {
