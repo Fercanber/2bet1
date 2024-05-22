@@ -12,6 +12,10 @@ public class GameController : MonoBehaviour
     public int numObjetosDestruidos = 0;
     public GameObject _portal;
     public GameObject _portalCollider;
+
+    public AudioSource _destroyItem;
+    public AudioSource _portalSound;
+
     void Start()
     {
         _portal.SetActive(false);
@@ -41,6 +45,7 @@ public class GameController : MonoBehaviour
                 GameObject[] objs = GameObject.FindGameObjectsWithTag(tagCollision1);
                 for(int i =0; i < objs.Length; i++) {
                     PhotonNetwork.Destroy(objs[i]);
+                    _destroyItem.Play();
                     numObjetosDestruidos++;
                 }
 
@@ -51,6 +56,7 @@ public class GameController : MonoBehaviour
         {
             _portal.SetActive(true);
             _portalCollider.SetActive(true);
+            _portalSound.Play();
             numObjetosDestruidos = 21;
         }
     }
